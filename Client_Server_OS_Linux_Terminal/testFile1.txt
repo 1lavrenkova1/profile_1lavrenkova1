@@ -1,0 +1,2 @@
+It's fifo!
+Let's read it!

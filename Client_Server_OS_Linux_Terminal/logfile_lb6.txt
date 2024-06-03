@@ -1,0 +1,419 @@
+//8
+julia@julia-ZenBook:~/OS/lb56/lb6$ ./task 
+Using default fileNames 'from.txt','to.txt'
+pipe is successfully created
+Read from pipe: Hello! It's pipe!
+julia@julia-ZenBook:~/OS/lb56/lb6$ cat to.txt 
+Hello! It's pipe!
+
+
+//9
+julia@julia-ZenBook:~/OS/lb56/lb6$ gcc fifo_out.c -o client
+julia@julia-ZenBook:~/OS/lb56/lb6$ ./client 
+julia@julia-ZenBook:~/OS/lb56/lb6$ gcc fifo_in.c -o server
+fifo_in.c: In function ‘main’:
+fifo_in.c:52:31: warning: format ‘%s’ expects a matching ‘char *’ argument [-Wformat=]
+   52 |        printf("Part of file: %s\n");
+      |                              ~^
+      |                               |
+      |                               char *
+julia@julia-ZenBook:~/OS/lb56/lb6$ ./server 
+Using default file name 'testFile1.txt'
+Part of file: It's fifo!
+Let's read it!
+
+//10
+julia@julia-ZenBook:~/OS/lb56/lb6/task10$ gcc client.c -o client 
+julia@julia-ZenBook:~/OS/lb56/lb6/task10$ ./client 
+shjfs djfkd
+shjkf 
+dfhj 
+sfhjhf 
+sdjhjf 
+fjkf 
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task10$ gcc recieved.c -o rec
+julia@julia-ZenBook:~/OS/lb56/lb6/task10$ ./rec 
+new message: shjfs djfkd
+new message: shjkf 
+new message: dfhj 
+new message: sfhjhf 
+new message: sdjhjf 
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task10$ gcc client.c -o client 
+julia@julia-ZenBook:~/OS/lb56/lb6/task10$ ./client 
+shjfs djfkd
+shjkf 
+dfhj 
+sfhjhf 
+sdjhjf 
+fjkf 
+sjdhfdf
+dfk
+ens
+^C^C
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task10$ gcc recieved.c -o rec
+julia@julia-ZenBook:~/OS/lb56/lb6/task10$ ./rec 
+new message: shjfs djfkd
+new message: shjkf 
+new message: dfhj 
+new message: sfhjhf 
+new message: sdjhjf 
+new message: fjkf 
+new message: sjdhfdf
+new message: dfk
+new message: ens
+Error while receiving message
+
+//12
+julia@julia-ZenBook:~/OS/lb56/lb6/task12$ ./server 
+Using default port 8888
+Some client sent: ksj
+Some client sent: sfhsjf
+Some client sent: skdj
+Some client sent: fdhks
+Some client sent: sfk
+Some client sent: skjdf
+Can't recv data from client, ending thread
+: Success
+^C
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task12$ ./client 
+Using default port 8888
+Using default addr 127.0.0.1
+Input request (empty to exit)
+ksj
+Server's response: ksj
+Input request (empty to exit)
+sfhsjf
+Server's response: sfhsjf
+Input request (empty to exit)
+skdj
+Server's response: skdj
+Input request (empty to exit)
+fdhks
+Server's response: fdhks
+Input request (empty to exit)
+sfk
+Server's response: sfk
+Input request (empty to exit)
+skjdf
+Server's response: skjdf
+Input request (empty to exit)
+
+Bye-bye
+
+
+//13
+riejxx@RieJxX:~/programming$ ifconfig 
+eno1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.18.3.35  netmask 255.255.224.0  broadcast 172.18.31.255
+        inet6 fe80::da2b:d39:32c6:acef  prefixlen 64  scopeid 0x20<link>
+        ether c0:18:03:63:dd:cd  txqueuelen 1000  (Ethernet)
+        RX packets 151472  bytes 10292481 (10.2 MB)
+        RX errors 0  dropped 174  overruns 0  frame 0
+        TX packets 3772  bytes 308433 (308.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 10339  bytes 984482 (984.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10339  bytes 984482 (984.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlo1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.20.10.2  netmask 255.255.255.240  broadcast 172.20.10.15
+        inet6 fe80::899:33af:7ea2:b708  prefixlen 64  scopeid 0x20<link>
+        ether d4:54:8b:6e:f8:52  txqueuelen 1000  (Ethernet)
+        RX packets 159495  bytes 197445243 (197.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 72281  bytes 12506427 (12.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+riejxx@RieJxX:~/programming$ ./test
+Using default port 8888
+Some client sent: fjgk
+Some client sent: fkgl
+Some client sent: fgkl
+Some client sent: fgl
+Some client sent: flg;
+Some client sent: fkgl
+Some client sent: dkfl
+Some client sent: dlf
+Some client sent: dgl;
+Some client sent: dg;
+Can't recv data from client, ending thread
+: Success
+^C
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task12$ ./client 
+Using default port 8888
+Using default addr 172.18.3.35
+Input request (empty to exit)
+fjgk
+Server's response: fjgk
+Input request (empty to exit)
+fkgl
+Server's response: fkgl
+Input request (empty to exit)
+fgkl
+Server's response: fgkl
+Input request (empty to exit)
+fgl
+Server's response: fgl
+Input request (empty to exit)
+flg;
+Server's response: flg;
+Input request (empty to exit)
+fkgl
+Server's response: fkgl
+Input request (empty to exit)
+dkfl
+Server's response: dkfl
+Input request (empty to exit)
+dlf
+Server's response: dlf
+Input request (empty to exit)
+dgl;
+Server's response: dgl;
+Input request (empty to exit)
+dg;
+Server's response: dg;
+Input request (empty to exit)
+
+Bye-bye
+
+
+//14
+julia@julia-ZenBook:~/OS/lb56/lb6/task14$ gcc server.c -o server
+server.c: In function ‘clientHandler’:
+server.c:50:12: warning: implicit declaration of function ‘pthread_exit’; did you mean ‘thrd_exit’? [-Wimplicit-function-declaration]
+   50 |            pthread_exit(NULL);
+      |            ^~~~~~~~~~~~
+      |            thrd_exit
+server.c: In function ‘main’:
+server.c:92:15: warning: implicit declaration of function ‘pthread_create’; did you mean ‘thrd_create’? [-Wimplicit-function-declaration]
+   92 |         res = pthread_create(&thrd, NULL, clientHandler, (void *)(client));
+      |               ^~~~~~~~~~~~~~
+      |               thrd_create
+server.c:92:58: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   92 |         res = pthread_create(&thrd, NULL, clientHandler, (void *)(client));
+      |                                                          ^
+julia@julia-ZenBook:~/OS/lb56/lb6/task14$ gcc client.c -o client
+client.c: In function ‘main’:
+client.c:57:15: warning: implicit declaration of function ‘sendFix’ [-Wimplicit-function-declaration]
+   57 |         res = sendFix(sock, buf,0);
+      |               ^~~~~~~
+client.c:63:15: warning: implicit declaration of function ‘readFix’ [-Wimplicit-function-declaration]
+   63 |         res = readFix(sock, buf, 100, 0);
+      |               ^~~~~~~
+
+//15
+julia@julia-ZenBook:~/OS/lb56/lb6/task15$ ./client 
+Using default port 8888
+Using default addr 127.0.0.1
+Input request (empty to exit)
+dhfj
+Server's response: dhfj
+Input request (empty to exit)
+dfj
+Server's response: dfj
+Input request (empty to exit)
+dfhj
+Server's response: dfhj
+Input request (empty to exit)
+jfhsj
+Server's response: jfhsj
+Input request (empty to exit)
+
+Bye-bye
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task15$ ./server 
+Using DEF_PORT 8888
+Some client send: dhfj
+Some client send: dfj
+Some client send: dfhj
+Some client send: jfhsj
+Can't recv data from client
+: Success
+
+//net
+riejxx@RieJxX:~/programming$ ./test
+Using DEF_PORT 8888
+Some client send: jdfk
+Some client send: dkfl
+Some client send: dfkl
+Some client send: dfkl
+Some client send: dfkl
+Some client send: dfjk
+Can't recv data from client
+: Success
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task15/net$ gcc client.c -o client
+julia@julia-ZenBook:~/OS/lb56/lb6/task15/net$ ./client 
+Using default port 8888
+Using default addr 172.18.3.35
+Input request (empty to exit)
+jdfk
+Server's response: jdfk
+Input request (empty to exit)
+dkfl
+Server's response: dkfl
+Input request (empty to exit)
+dfkl
+Server's response: dfkl
+Input request (empty to exit)
+dfkl
+Server's response: dfkl
+Input request (empty to exit)
+dfkl
+Server's response: dfkl
+Input request (empty to exit)
+dfjk
+Server's response: dfjk
+Input request (empty to exit)
+
+Bye-bye
+
+
+//16
+TPS
+julia@julia-ZenBook:~/OS/lb56/lb6/task16$ ./server 
+Using default port 8888
+Some client sent: fjdkf
+Some client sent: sf,j
+Some client sent: sfjk
+Some client sent: skdl
+Some client sent: sk
+Some client sent: sdkl
+Some client sent: dsl
+Can't recv data from client, ending thread
+: Success
+^Z
+[1]+  Остановлен    ./server
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task16$ ./client 
+Using default port 8888
+Using default addr 127.0.0.1
+Input request (empty to exit)
+fjdkf
+Server's response: fjdkf
+TIME: 168 mcs
+Input request (empty to exit)
+sf,j
+Server's response: sf,j
+TIME: 43162 mcs
+Input request (empty to exit)
+sfjk
+Server's response: sfjk
+TIME: 40825 mcs
+Input request (empty to exit)
+skdl
+Server's response: skdl
+TIME: 42109 mcs
+Input request (empty to exit)
+sk
+Server's response: sk
+TIME: 43051 mcs
+Input request (empty to exit)
+sdkl
+Server's response: sdkl
+TIME: 43348 mcs
+Input request (empty to exit)
+dsl
+Server's response: dsl
+TIME: 41517 mcs
+Input request (empty to exit)
+
+Bye-bye
+
+UDP
+julia@julia-ZenBook:~/OS/lb56/lb6/task16$ ./server 
+Using DEF_PORT 8888
+Some client send: shdj
+Some client send: sjkd
+Some client send: sdkj
+Some client send: sdj
+Some client send: skdj
+Some client send: sdjk
+Can't recv data from client
+: Success
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task16$ gcc client_UDP.c -o client
+julia@julia-ZenBook:~/OS/lb56/lb6/task16$ ./client 
+Using default port 8888
+Using default addr 127.0.0.1
+Input request (empty to exit)
+shdj
+Server's response: shdj
+TIME: 143 mcs
+Input request (empty to exit)
+sjkd
+Server's response: sjkd
+TIME: 97 mcs
+Input request (empty to exit)
+sdkj
+Server's response: sdkj
+TIME: 128 mcs
+Input request (empty to exit)
+sdj
+Server's response: sdj
+TIME: 104 mcs
+Input request (empty to exit)
+skdj
+Server's response: skdj
+TIME: 98 mcs
+Input request (empty to exit)
+sdjk
+Server's response: sdjk
+TIME: 103 mcs
+Input request (empty to exit)
+
+Bye-bye
+
+
+//17
+julia@julia-ZenBook:~/OS/lb56/lb6/task17/var1$ ./sevrer 
+Using default key file key
+Client's message: skd
+Client's message: fkl
+Client's message: sdkl
+Client's message: dkls
+Client's message: sdkl
+Client's message: skdl
+Client's message: sdkl
+^Cexecution complete
+Error while detaching shm
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task17/var1$ ./client 
+Using default key file key
+Type message to serever. Empty string to finish
+skd
+Type message to serever. Empty string to finish
+fkl
+Type message to serever. Empty string to finish
+sdkl
+Type message to serever. Empty string to finish
+dkls
+Type message to serever. Empty string to finish
+
+bye-bye
+julia@julia-ZenBook:~/OS/lb56/lb6/task17/var1$ ./client 
+Using default key file key
+Type message to serever. Empty string to finish
+sdkl
+Type message to serever. Empty string to finish
+skdl
+Type message to serever. Empty string to finish
+sdkl
+Type message to serever. Empty string to finish
+
+bye-bye
+
+julia@julia-ZenBook:~/OS/lb56/lb6/task17/var2$ bash script_17.sh 2 2
+
+
