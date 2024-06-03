@@ -1,0 +1,352 @@
+      2 ?        S      0:00 [kthreadd]
+      3 ?        I<     0:00  \_ [rcu_gp]
+      4 ?        I<     0:00  \_ [rcu_par_gp]
+      5 ?        I<     0:00  \_ [slub_flushwq]
+      6 ?        I<     0:00  \_ [netns]
+      8 ?        I<     0:00  \_ [kworker/0:0H-events_highpri]
+     11 ?        I<     0:00  \_ [mm_percpu_wq]
+     12 ?        I      0:00  \_ [rcu_tasks_kthread]
+     13 ?        I      0:00  \_ [rcu_tasks_rude_kthread]
+     14 ?        I      0:00  \_ [rcu_tasks_trace_kthread]
+     15 ?        S      0:15  \_ [ksoftirqd/0]
+     16 ?        I      2:01  \_ [rcu_preempt]
+     17 ?        S      0:00  \_ [migration/0]
+     18 ?        S      0:00  \_ [idle_inject/0]
+     19 ?        S      0:00  \_ [cpuhp/0]
+     20 ?        S      0:00  \_ [cpuhp/1]
+     21 ?        S      0:00  \_ [idle_inject/1]
+     22 ?        S      0:00  \_ [migration/1]
+     23 ?        S      0:06  \_ [ksoftirqd/1]
+     25 ?        I<     0:00  \_ [kworker/1:0H-events_highpri]
+     26 ?        S      0:00  \_ [cpuhp/2]
+     27 ?        S      0:00  \_ [idle_inject/2]
+     28 ?        S      0:00  \_ [migration/2]
+     29 ?        S      0:06  \_ [ksoftirqd/2]
+     31 ?        I<     0:00  \_ [kworker/2:0H-events_highpri]
+     32 ?        S      0:00  \_ [cpuhp/3]
+     33 ?        S      0:00  \_ [idle_inject/3]
+     34 ?        S      0:00  \_ [migration/3]
+     35 ?        S      0:03  \_ [ksoftirqd/3]
+     37 ?        I<     0:00  \_ [kworker/3:0H-events_highpri]
+     38 ?        S      0:00  \_ [cpuhp/4]
+     39 ?        S      0:00  \_ [idle_inject/4]
+     40 ?        S      0:00  \_ [migration/4]
+     41 ?        S      0:09  \_ [ksoftirqd/4]
+     43 ?        I<     0:00  \_ [kworker/4:0H-events_highpri]
+     44 ?        S      0:00  \_ [cpuhp/5]
+     45 ?        S      0:00  \_ [idle_inject/5]
+     46 ?        S      0:00  \_ [migration/5]
+     47 ?        S      0:04  \_ [ksoftirqd/5]
+     49 ?        I<     0:00  \_ [kworker/5:0H-events_highpri]
+     50 ?        S      0:00  \_ [cpuhp/6]
+     51 ?        S      0:00  \_ [idle_inject/6]
+     52 ?        S      0:00  \_ [migration/6]
+     53 ?        S      0:14  \_ [ksoftirqd/6]
+     55 ?        I<     0:00  \_ [kworker/6:0H-events_highpri]
+     56 ?        S      0:00  \_ [cpuhp/7]
+     57 ?        S      0:00  \_ [idle_inject/7]
+     58 ?        S      0:00  \_ [migration/7]
+     59 ?        S      0:13  \_ [ksoftirqd/7]
+     61 ?        I<     0:00  \_ [kworker/7:0H-events_highpri]
+     62 ?        S      0:00  \_ [kdevtmpfs]
+     63 ?        I<     0:00  \_ [inet_frag_wq]
+     64 ?        S      0:00  \_ [kauditd]
+     66 ?        S      0:00  \_ [khungtaskd]
+     67 ?        S      0:00  \_ [oom_reaper]
+     69 ?        I<     0:00  \_ [writeback]
+     70 ?        S      1:12  \_ [kcompactd0]
+     71 ?        SN     0:00  \_ [ksmd]
+     73 ?        SN     0:00  \_ [khugepaged]
+     74 ?        I<     0:00  \_ [kintegrityd]
+     75 ?        I<     0:00  \_ [kblockd]
+     76 ?        I<     0:00  \_ [blkcg_punt_bio]
+     77 ?        I<     0:00  \_ [tpm_dev_wq]
+     78 ?        I<     0:00  \_ [ata_sff]
+     79 ?        I<     0:00  \_ [md]
+     80 ?        I<     0:00  \_ [md_bitmap]
+     81 ?        I<     0:00  \_ [edac-poller]
+     82 ?        I<     0:00  \_ [devfreq_wq]
+     83 ?        S      0:00  \_ [watchdogd]
+     84 ?        I<     0:13  \_ [kworker/0:1H-events_highpri]
+     86 ?        S      0:12  \_ [kswapd0]
+     87 ?        S      0:00  \_ [ecryptfs-kthread]
+     88 ?        I<     0:00  \_ [kthrotld]
+     89 ?        S      0:00  \_ [irq/124-pciehp]
+     90 ?        S      0:00  \_ [irq/125-pciehp]
+     91 ?        I<     0:00  \_ [acpi_thermal_pm]
+     93 ?        S      0:04  \_ [hwrng]
+     95 ?        I<     0:00  \_ [mld]
+     96 ?        I<     0:09  \_ [kworker/5:1H-kblockd]
+     97 ?        I<     0:00  \_ [ipv6_addrconf]
+    106 ?        I<     0:00  \_ [kstrp]
+    116 ?        I<     0:00  \_ [charger_manager]
+    138 ?        I<     0:08  \_ [kworker/3:1H-kblockd]
+    152 ?        I<     0:12  \_ [kworker/1:1H-events_highpri]
+    155 ?        I<     0:08  \_ [kworker/4:1H-events_highpri]
+    156 ?        I<     0:10  \_ [kworker/2:1H-events_highpri]
+    157 ?        I<     0:09  \_ [kworker/6:1H-events_highpri]
+    158 ?        I<     0:13  \_ [kworker/7:1H-kblockd]
+    191 ?        S     10:55  \_ [irq/118-ASUE140A:00]
+    194 ?        I<     0:00  \_ [nvme-wq]
+    195 ?        I<     0:00  \_ [nvme-reset-wq]
+    196 ?        I<     0:00  \_ [nvme-delete-wq]
+    197 ?        I<     0:00  \_ [nvme-auth-wq]
+    217 ?        S      0:23  \_ [jbd2/nvme0n1p6-8]
+    218 ?        I<     0:00  \_ [ext4-rsv-conver]
+    370 ?        I<     0:00  \_ [cfg80211]
+    394 ?        I<     0:00  \_ [cryptd]
+    397 ?        S      1:13  \_ [irq/192-iwlwifi:default_queue]
+    399 ?        S      0:27  \_ [irq/193-iwlwifi:queue_1]
+    400 ?        S      0:28  \_ [irq/194-iwlwifi:queue_2]
+    401 ?        S      0:29  \_ [irq/195-iwlwifi:queue_3]
+    402 ?        S      0:31  \_ [irq/196-iwlwifi:queue_4]
+    403 ?        S      0:28  \_ [irq/197-iwlwifi:queue_5]
+    404 ?        S      0:37  \_ [irq/198-iwlwifi:queue_6]
+    405 ?        S      0:28  \_ [irq/199-iwlwifi:queue_7]
+    406 ?        S      0:25  \_ [irq/200-iwlwifi:queue_8]
+    407 ?        S      0:00  \_ [irq/201-iwlwifi:exception]
+    488 ?        I<     0:00  \_ [led_workqueue]
+    563 ?        I<     0:00  \_ [ttm]
+    566 ?        S      0:00  \_ [card0-crtc0]
+    567 ?        S      0:00  \_ [card0-crtc1]
+    568 ?        S      0:00  \_ [card0-crtc2]
+    569 ?        S      0:00  \_ [card0-crtc3]
+    864 ?        S      0:00  \_ [irq/203-AudioDSP]
+   1508 ?        S<     0:00  \_ [krfcommd]
+   9053 ?        I<     0:00  \_ [tls-strp]
+ 265323 ?        I<     0:15  \_ [kworker/u17:3-rb_allocator]
+ 273668 ?        D<     0:12  \_ [kworker/u17:0+i915_flip]
+ 275414 ?        I      0:01  \_ [kworker/3:0-events]
+ 277739 ?        I      0:00  \_ [kworker/2:2-events]
+ 278104 ?        I      0:13  \_ [kworker/7:0-events]
+ 278660 ?        I      0:11  \_ [kworker/6:2-i915-unordered]
+ 279502 ?        I      0:00  \_ [kworker/5:2-events]
+ 279838 ?        I      0:00  \_ [kworker/1:0-events_freezable]
+ 280132 ?        I      0:04  \_ [kworker/7:2-i915-unordered]
+ 280236 ?        I      0:00  \_ [kworker/2:1-events]
+ 280349 ?        I<     0:00  \_ [kworker/u17:2-rb_allocator]
+ 280905 ?        I      0:00  \_ [kworker/u16:46-events_unbound]
+ 280907 ?        I      0:00  \_ [kworker/u16:49-events_power_efficient]
+ 280919 ?        S      0:00  \_ [irq/191-mei_me]
+ 280920 ?        I      0:00  \_ [kworker/4:1-i915-unordered]
+ 281353 ?        I      0:00  \_ [kworker/0:3-events]
+ 281517 ?        I      0:00  \_ [kworker/5:0-events]
+ 281518 ?        I      0:00  \_ [kworker/1:1-events]
+ 281548 ?        I      0:00  \_ [kworker/3:1-events]
+ 281557 ?        I      0:00  \_ [kworker/7:3-events]
+ 281561 ?        I      0:00  \_ [kworker/4:0-events]
+ 281591 ?        I      0:00  \_ [kworker/u16:0-events_power_efficient]
+ 281638 ?        I      0:03  \_ [kworker/6:1-i915-unordered]
+ 281822 ?        I      0:00  \_ [kworker/0:1-events]
+ 281954 ?        I      0:00  \_ [kworker/5:1-events]
+ 281984 ?        I      0:00  \_ [kworker/4:2-events]
+ 281985 ?        I      0:00  \_ [kworker/7:1-events]
+ 281987 ?        I      0:00  \_ [kworker/4:3-events]
+ 281989 ?        I      0:00  \_ [kworker/3:2-events]
+ 282020 ?        I      0:00  \_ [kworker/6:0-i915-unordered]
+ 282060 ?        I      0:00  \_ [kworker/u16:1]
+ 282227 ?        I      0:00  \_ [kworker/5:3-events]
+ 282266 ?        I      0:00  \_ [kworker/0:0-i915-unordered]
+ 282267 ?        I      0:00  \_ [kworker/3:3]
+      1 ?        Ss     0:16 /lib/systemd/systemd --system --deserialize 23 splash
+    257 ?        S<s    0:09 /lib/systemd/systemd-journald
+    304 ?        Ss     0:06 /lib/systemd/systemd-udevd
+    461 ?        Ss     0:51 /lib/systemd/systemd-resolved
+    462 ?        Ssl    0:00 /lib/systemd/systemd-timesyncd
+    518 ?        Ssl    0:03 /usr/libexec/accounts-daemon
+    519 ?        Ss     0:08 /usr/sbin/acpid
+    522 ?        Ss     0:02 avahi-daemon: running [julia-ZenBook.local]
+    571 ?        S      0:00  \_ avahi-daemon: chroot helper
+    523 ?        Ss     0:00 /usr/lib/bluetooth/bluetoothd
+    526 ?        Ss     0:33 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    529 ?        Ssl    0:36 /usr/sbin/NetworkManager --no-daemon
+    534 ?        Ssl    0:41 /usr/sbin/irqbalance --foreground
+    537 ?        Ss     0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    540 ?        Ssl    0:21 /usr/libexec/polkitd --no-debug
+    542 ?        Ssl    0:00 /usr/libexec/power-profiles-daemon
+    544 ?        Ssl    0:02 /usr/sbin/rsyslogd -n -iNONE
+    551 ?        Ssl    0:19 /usr/lib/snapd/snapd
+    554 ?        Ssl    0:00 /usr/libexec/switcheroo-control
+    559 ?        Ss     0:08 /lib/systemd/systemd-logind
+    560 ?        Ssl    0:57 /usr/sbin/thermald --systemd --dbus-enable --adaptive
+    561 ?        Ssl    0:00 /usr/libexec/udisks2/udisksd
+    562 ?        Ss     0:09 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+    649 ?        Ssl    0:03 /usr/sbin/ModemManager
+    673 ?        Ssl    0:01 /usr/libexec/boltd
+    700 ?        Ssl    0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    745 ?        Ssl    0:00 /usr/sbin/gdm3
+   1423 ?        Sl     0:00  \_ gdm-session-worker [pam/gdm-password]
+   1513 tty2     Ssl+   0:00      \_ /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+   1516 tty2     Sl+    0:00          \_ /usr/libexec/gnome-session-binary --session=ubuntu
+    833 ?        Ssl    0:06 /usr/libexec/upowerd
+    954 ?        SNsl   0:01 /usr/libexec/rtkit-daemon
+   1082 ?        Ssl    0:32 /usr/libexec/packagekitd
+   1299 ?        Ssl    0:00 /usr/libexec/colord
+   1442 ?        Ss     0:12 /lib/systemd/systemd --user
+   1443 ?        S      0:00  \_ (sd-pam)
+   1449 ?        S<sl   0:00  \_ /usr/bin/pipewire
+   1450 ?        Ssl    0:02  \_ /usr/bin/pipewire-media-session
+   1451 ?        S<sl 136:49  \_ /usr/bin/pulseaudio --daemonize=no --log-target=journal
+   1452 ?        Ss     0:01  \_ /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
+   1668 ?        Sl     0:00  |   \_ /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
+   1479 ?        Ss     0:51  \_ /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   1480 ?        Ssl    0:01  \_ /usr/libexec/xdg-document-portal
+   1490 ?        Ss     0:00  |   \_ fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+   1484 ?        Ssl    0:00  \_ /usr/libexec/xdg-permission-store
+   1554 ?        Ssl    0:00  \_ /usr/libexec/gnome-session-ctl --monitor
+   1564 ?        Ssl    0:00  \_ /usr/libexec/gvfsd
+   1760 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-trash --spawner :1.15 /org/gtk/gvfs/exec_spaw/0
+  26081 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-network --spawner :1.15 /org/gtk/gvfs/exec_spaw/1
+  26101 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-dnssd --spawner :1.15 /org/gtk/gvfs/exec_spaw/3
+ 255059 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-http --spawner :1.15 /org/gtk/gvfs/exec_spaw/4
+   1572 ?        Sl     0:00  \_ /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   1575 ?        Ssl    0:01  \_ /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+   1594 ?        Sl     0:00  |   \_ /usr/libexec/at-spi-bus-launcher --launch-immediately
+   1604 ?        S      0:00  |   |   \_ /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+   1861 ?        Sl     0:00  |   \_ /usr/libexec/gsd-disk-utility-notify
+   1882 ?        Sl     0:00  |   \_ /usr/libexec/evolution-data-server/evolution-alarm-notify
+   1597 ?        Ssl  153:42  \_ /usr/bin/gnome-shell
+   2334 ?        Sl   259:26  |   \_ /snap/firefox/4259/usr/lib/firefox/firefox
+   2527 ?        Sl     0:00  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -parentBuildID 20240510023632 -prefsLen 31938 -prefMapSize 243822 -appDir /snap/firefox/4259/usr/lib/firefox/browser {eeacbb0a-60b7-4cf9-81fe-0c4c065a3dfa} 2334 true socket
+   2543 ?        Sl     0:55  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 32079 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {e508ff61-41ec-4ac0-aac6-b218a1efab8a} 2334 true tab
+   2669 ?        Sl     1:59  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 37594 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {b7fbd47f-8ed6-435f-8d59-150c6024d0cf} 2334 true tab
+   2897 ?        Sl     0:15  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -parentBuildID 20240510023632 -sandboxingKind 0 -prefsLen 37594 -prefMapSize 243822 -appDir /snap/firefox/4259/usr/lib/firefox/browser {7a688808-e1a7-4d67-ad9f-d8e304ca05d1} 2334 true utility
+   3199 ?        Sl    78:26  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 10 -isForBrowser -prefsLen 31555 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {8101ddda-dade-4006-8413-0b026ea5f21a} 2334 true tab
+   8522 ?        Sl     0:09  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -parentBuildID 20240510023632 -prefsLen 37648 -prefMapSize 243822 -appDir /snap/firefox/4259/usr/lib/firefox/browser {a92cf38d-25d2-408c-bb59-40560d4fb20d} 2334 true rdd
+  24552 ?        Sl     5:09  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 60 -isForBrowser -prefsLen 31747 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {2d4616c7-e562-44ed-89b9-838831c451d6} 2334 true tab
+  31783 ?        Sl    11:49  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 119 -isForBrowser -prefsLen 31747 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {bd3d3f71-cd8c-4ff4-9fcf-cbe777a5007b} 2334 true tab
+ 105978 ?        Sl    11:39  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 221 -isForBrowser -prefsLen 31878 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {3b502a45-b76a-451b-884a-16f0d889d4fc} 2334 true tab
+ 138429 ?        Sl     2:33  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 226 -isForBrowser -prefsLen 31879 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {0e7366e3-e2a3-4be3-9e6b-3e59fa70e701} 2334 true tab
+ 138510 ?        Sl    19:19  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 227 -isForBrowser -prefsLen 31879 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {88879135-d777-4aba-99f1-70002c14e679} 2334 true tab
+ 156044 ?        Sl     2:00  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 240 -isForBrowser -prefsLen 31878 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {19baa085-3846-449d-ba7b-fd47dabb01b4} 2334 true tab
+ 156230 ?        Sl     3:40  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 242 -isForBrowser -prefsLen 31878 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {d216187e-f05f-4d16-ab6b-7b3eb679339a} 2334 true tab
+ 164709 ?        Sl     0:41  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 275 -isForBrowser -prefsLen 31879 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {e2249777-6999-4126-bc1f-74dab3d5ff52} 2334 true tab
+ 169591 ?        Sl     0:53  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 308 -isForBrowser -prefsLen 31879 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {f68b1c85-d2d7-46a7-a874-437284f624cb} 2334 true tab
+ 175115 ?        Sl     2:32  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 323 -isForBrowser -prefsLen 31879 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {0c86e7af-c9eb-4ed3-8c78-abd5019a0f46} 2334 true tab
+ 175343 ?        Sl     1:34  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 326 -isForBrowser -prefsLen 31879 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {513545bf-9ca0-4d44-bf45-5850646e870d} 2334 true tab
+ 239005 ?        Sl     0:19  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 439 -isForBrowser -prefsLen 31915 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {0341db86-c9ad-4c2e-a916-53e25eed8fd0} 2334 true tab
+ 240721 ?        Sl     0:15  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 440 -isForBrowser -prefsLen 31915 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {72df946e-16c3-4ccc-b857-31df24d23438} 2334 true tab
+ 242572 ?        Sl     0:44  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 441 -isForBrowser -prefsLen 31915 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {442ea178-a9b3-4c94-b0c1-3a3ffc3bdd93} 2334 true tab
+ 244001 ?        Sl     0:36  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 447 -isForBrowser -prefsLen 31915 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {f6b2f13a-db85-4c36-95a7-28d6de9c0098} 2334 true tab
+ 249128 ?        Sl     1:21  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 463 -isForBrowser -prefsLen 31914 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {e12d2d36-ff52-4f11-925f-75d70808482a} 2334 true tab
+ 259809 ?        Sl     3:32  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 468 -isForBrowser -prefsLen 31915 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {4dfefcc2-99a5-4e51-9063-d6c07175593f} 2334 true tab
+ 269306 ?        Sl     0:50  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 484 -isForBrowser -prefsLen 31914 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {2228b3b8-9256-487e-bde3-caf274b1aef5} 2334 true tab
+ 269356 ?        Sl     0:07  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 485 -isForBrowser -prefsLen 31914 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {8ddc3112-33ba-439f-8108-714ae6ec44c5} 2334 true tab
+ 272729 ?        Sl     0:02  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 490 -isForBrowser -prefsLen 31914 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {f98fd64b-7bed-4b07-9325-ff238145b1ea} 2334 true tab
+ 273406 ?        Sl     0:10  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 494 -isForBrowser -prefsLen 31914 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {60551d36-e11e-4440-990a-a15909c2f768} 2334 true tab
+ 279972 ?        Sl     0:05  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 503 -isForBrowser -prefsLen 31914 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {11cf4f1a-75eb-4d97-8666-821638451e75} 2334 true tab
+ 280585 ?        Sl     0:00  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 508 -isForBrowser -prefsLen 31914 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {ff784b5c-afaa-4a10-b396-225c7d4ba80e} 2334 true tab
+ 280638 ?        Sl     0:00  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 509 -isForBrowser -prefsLen 31914 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {9ae62ec5-1e05-4efe-a131-0619af2d4c71} 2334 true tab
+ 280660 ?        Sl     0:00  |   |   \_ /snap/firefox/4259/usr/lib/firefox/firefox -contentproc -childID 510 -isForBrowser -prefsLen 31914 -prefMapSize 243822 -jsInitLen 231800 -parentBuildID 20240510023632 -greomni /snap/firefox/4259/usr/lib/firefox/omni.ja -appomni /snap/firefox/4259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4259/usr/lib/firefox/browser {e8f23666-98d6-49ee-bcf5-7c9313cc79f6} 2334 true tab
+  22877 ?        Sl     6:09  |   \_ /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.GX3TO2 -listen 4 -listen 5 -displayfd 6 -initfd 7
+  26328 ?        Sl     4:38  |   \_ /usr/share/code/code
+  26333 ?        S      0:00  |   |   \_ /usr/share/code/code --type=zygote --no-zygote-sandbox
+  26370 ?        Sl     8:01  |   |   |   \_ /usr/share/code/code --type=gpu-process --crashpad-handler-pid=26350 --enable-crash-reporter=2fad70d7-e1b0-4030-a232-9432ba116cd9,no_channel --user-data-dir=/home/julia/.config/Code --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=0,i,6486262116667381395,14162139822059322082,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+  26334 ?        S      0:00  |   |   \_ /usr/share/code/code --type=zygote
+  26336 ?        S      0:00  |   |   |   \_ /usr/share/code/code --type=zygote
+  26411 ?        Sl    11:22  |   |   |       \_ /usr/share/code/code --type=renderer --crashpad-handler-pid=26350 --enable-crash-reporter=2fad70d7-e1b0-4030-a232-9432ba116cd9,no_channel --user-data-dir=/home/julia/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-path=/usr/share/code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --first-renderer-process --lang=ru --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1716557695916535 --launch-time-ticks=6307042303 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,6486262116667381395,14162139822059322082,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version --vscode-window-config=vscode:ab877904-aba7-4090-9bd9-34ade23bbc07
+  26374 ?        Sl     0:11  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=network.mojom.NetworkService --lang=ru --service-sandbox-type=none --crashpad-handler-pid=26350 --enable-crash-reporter=2fad70d7-e1b0-4030-a232-9432ba116cd9,no_channel --user-data-dir=/home/julia/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,6486262116667381395,14162139822059322082,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+  26447 ?        Sl     1:08  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=ru --service-sandbox-type=none --crashpad-handler-pid=26350 --enable-crash-reporter=2fad70d7-e1b0-4030-a232-9432ba116cd9,no_channel --user-data-dir=/home/julia/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,6486262116667381395,14162139822059322082,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+  26448 ?        Sl     0:18  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=ru --service-sandbox-type=none --crashpad-handler-pid=26350 --enable-crash-reporter=2fad70d7-e1b0-4030-a232-9432ba116cd9,no_channel --user-data-dir=/home/julia/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,6486262116667381395,14162139822059322082,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+  26467 ?        Sl     1:05  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=ru --service-sandbox-type=none --dns-result-order=ipv4first --inspect-port=0 --crashpad-handler-pid=26350 --enable-crash-reporter=2fad70d7-e1b0-4030-a232-9432ba116cd9,no_channel --user-data-dir=/home/julia/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,6486262116667381395,14162139822059322082,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+  26530 ?        Sl     0:56  |   |   |   \_ /home/julia/.vscode/extensions/ms-vscode.cpptools-1.20.5-linux-x64/bin/cpptools
+  26493 ?        Sl     4:49  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=ru --service-sandbox-type=none --crashpad-handler-pid=26350 --enable-crash-reporter=2fad70d7-e1b0-4030-a232-9432ba116cd9,no_channel --user-data-dir=/home/julia/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,6486262116667381395,14162139822059322082,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+  26511 pts/2    Ss+    0:00  |   |       \_ /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+ 163910 pts/0    Ss+    0:00  |   |       \_ /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+ 173217 pts/6    Ss+    0:00  |   |       \_ /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+ 158993 ?        Sl     0:00  |   \_ /usr/lib/libreoffice/program/oosplash --writer
+ 159010 ?        Sl     7:30  |   |   \_ /usr/lib/libreoffice/program/soffice.bin --writer
+ 238287 ?        Sl     0:31  |   \_ gnome-control-center wifi
+ 244592 ?        Sl    17:11  |   \_ /home/julia/idea-IC-241.15989.150/jbr/bin/java -classpath /home/julia/idea-IC-241.15989.150/lib/platform-loader.jar:/home/julia/idea-IC-241.15989.150/lib/util-8.jar:/home/julia/idea-IC-241.15989.150/lib/util.jar:/home/julia/idea-IC-241.15989.150/lib/app-client.jar:/home/julia/idea-IC-241.15989.150/lib/util_rt.jar:/home/julia/idea-IC-241.15989.150/lib/product.jar:/home/julia/idea-IC-241.15989.150/lib/opentelemetry.jar:/home/julia/idea-IC-241.15989.150/lib/app.jar:/home/julia/idea-IC-241.15989.150/lib/modules.jar:/home/julia/idea-IC-241.15989.150/lib/lib-client.jar:/home/julia/idea-IC-241.15989.150/lib/stats.jar:/home/julia/idea-IC-241.15989.150/lib/jps-model.jar:/home/julia/idea-IC-241.15989.150/lib/external-system-rt.jar:/home/julia/idea-IC-241.15989.150/lib/rd.jar:/home/julia/idea-IC-241.15989.150/lib/bouncy-castle.jar:/home/julia/idea-IC-241.15989.150/lib/protobuf.jar:/home/julia/idea-IC-241.15989.150/lib/intellij-test-discovery.jar:/home/julia/idea-IC-241.15989.150/lib/intellij-coverage-agent-1.0.744.jar:/home/julia/idea-IC-241.15989.150/lib/forms_rt.jar:/home/julia/idea-IC-241.15989.150/lib/lib.jar:/home/julia/idea-IC-241.15989.150/lib/externalProcess-rt.jar:/home/julia/idea-IC-241.15989.150/lib/groovy.jar:/home/julia/idea-IC-241.15989.150/lib/annotations.jar:/home/julia/idea-IC-241.15989.150/lib/grpc.jar:/home/julia/idea-IC-241.15989.150/lib/idea_rt.jar:/home/julia/idea-IC-241.15989.150/lib/jsch-agent.jar:/home/julia/idea-IC-241.15989.150/lib/junit4.jar:/home/julia/idea-IC-241.15989.150/lib/trove.jar -XX:ErrorFile=/home/julia/java_error_in_idea_%p.log -XX:HeapDumpPath=/home/julia/java_error_in_idea_.hprof -Xms128m -Xmx2048m -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -XX:+IgnoreUnrecognizedVMOptions -ea -Dsun.io.useCanonCaches=false -Dsun.java2d.metal=true -Djbr.catch.SIGABRT=true -Djdk.http.auth.tunneling.disabledSchemes="" -Djdk.attach.allowAttachSelf=true -Djdk.module.illegalAccess.silent=true -Dkotlinx.coroutines.debug=off -XX:CICompilerCount=2 -XX:ReservedCodeCacheSize=512m -XX:CompileCommand=exclude,com/intellij/openapi/vfs/impl/FilePartNodeRoot,trieDescend -XX:SoftRefLRUPolicyMSPerMB=50 -Dide.show.tips.on.startup.default.value=false -Dsun.tools.attach.tmp.only=true -Dawt.lock.fair=true -Xmx2048m -Djb.vmOptionsFile=/home/julia/.config/JetBrains/IdeaIC2024.1/idea64.vmoptions -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Didea.vendor.name=JetBrains -Didea.paths.selector=IdeaIC2024.1 -Djna.boot.library.path=/home/julia/idea-IC-241.15989.150/lib/jna/amd64 -Dpty4j.preferred.native.folder=/home/julia/idea-IC-241.15989.150/lib/pty4j -Djna.nosys=true -Djna.noclasspath=true -Dintellij.platform.runtime.repository.path=/home/julia/idea-IC-241.15989.150/modules/module-descriptors.jar -Didea.platform.prefix=Idea -Dsplash=true -Daether.connector.resumeDownloads=false --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.ref=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED --add-opens=java.base/jdk.internal.vm=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED --add-opens=java.base/sun.security.ssl=ALL-UNNAMED --add-opens=java.base/sun.security.util=ALL-UNNAMED --add-opens=java.base/sun.net.dns=ALL-UNNAMED --add-opens=java.desktop/com.sun.java.swing.plaf.gtk=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.event=ALL-UNNAMED --add-opens=java.desktop/java.awt.image=ALL-UNNAMED --add-opens=java.desktop/java.awt.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text.html=ALL-UNNAMED --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED --add-opens=java.desktop/sun.awt.datatransfer=ALL-UNNAMED --add-opens=java.desktop/sun.awt.image=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-opens=java.desktop/sun.font=ALL-UNNAMED --add-opens=java.desktop/sun.java2d=ALL-UNNAMED --add-opens=java.desktop/sun.swing=ALL-UNNAMED --add-opens=java.desktop/com.sun.java.swing=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED --add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-opens=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED --add-opens=jdk.jdi/com.sun.tools.jdi=ALL-UNNAMED com.intellij.idea.Main
+ 244755 ?        S      0:11  |   |   \_ /home/julia/idea-IC-241.15989.150/bin/fsnotifier
+ 269436 ?        Sl     0:04  |   \_ /usr/lib/github-desktop/github-desktop
+ 269441 ?        S      0:00  |   |   \_ /usr/lib/github-desktop/github-desktop --type=zygote --no-zygote-sandbox
+ 269471 ?        Sl     0:05  |   |   |   \_ /usr/lib/github-desktop/github-desktop --type=gpu-process --enable-crash-reporter=b79262fc-0af7-444c-a426-c786b7461f57,no_channel --user-data-dir=/home/julia/.config/GitHub Desktop --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=0,i,4742402615976509835,11087857299697649983,262144 --enable-features=kWebSQLAccess --disable-features=SpareRendererForSitePerProcess --variations-seed-version
+ 269442 ?        S      0:00  |   |   \_ /usr/lib/github-desktop/github-desktop --type=zygote
+ 269444 ?        S      0:00  |   |   |   \_ /usr/lib/github-desktop/github-desktop --type=zygote
+ 269483 ?        Sl     0:01  |   |   \_ /usr/lib/github-desktop/github-desktop --type=utility --utility-sub-type=network.mojom.NetworkService --lang=ru --service-sandbox-type=none --enable-crash-reporter=b79262fc-0af7-444c-a426-c786b7461f57,no_channel --user-data-dir=/home/julia/.config/GitHub Desktop --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,4742402615976509835,11087857299697649983,262144 --enable-features=kWebSQLAccess --disable-features=SpareRendererForSitePerProcess --variations-seed-version
+ 269488 ?        SLl    0:08  |   |   \_ /usr/lib/github-desktop/github-desktop --type=renderer --enable-crash-reporter=b79262fc-0af7-444c-a426-c786b7461f57,no_channel --user-data-dir=/home/julia/.config/GitHub Desktop --app-path=/usr/lib/github-desktop/resources/app --no-sandbox --no-zygote --disable-blink-features=Auxclick --first-renderer-process --lang=ru --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1716906308427169 --launch-time-ticks=87090517048 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,4742402615976509835,11087857299697649983,262144 --enable-features=kWebSQLAccess --disable-features=SpareRendererForSitePerProcess --variations-seed-version
+ 281024 ?        Sl     0:00  |   \_ gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:1920:1080:1:27:0:0:0:0
+   1671 ?        Sl     0:00  \_ /usr/libexec/gnome-shell-calendar-server
+   1677 ?        Ssl    0:00  \_ /usr/libexec/evolution-source-registry
+   1697 ?        Sl     0:00  \_ /usr/libexec/goa-daemon
+   1698 ?        Ssl    0:01  \_ /usr/libexec/dconf-service
+   1701 ?        Ssl    0:02  \_ /usr/libexec/evolution-calendar-factory
+   1704 ?        Ssl    0:00  \_ /usr/libexec/gvfs-udisks2-volume-monitor
+   1715 ?        Sl     0:03  \_ /usr/libexec/goa-identity-service
+   1722 ?        Ssl    0:00  \_ /usr/libexec/gvfs-gphoto2-volume-monitor
+   1731 ?        Ssl    0:01  \_ /usr/libexec/evolution-addressbook-factory
+   1735 ?        Ssl    0:00  \_ /usr/libexec/gvfs-mtp-volume-monitor
+   1741 ?        Ssl    0:00  \_ /usr/libexec/gvfs-goa-volume-monitor
+   1748 ?        Ssl    0:04  \_ /usr/libexec/gvfs-afc-volume-monitor
+   1771 ?        Sl     0:01  \_ /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   1773 ?        Sl     0:00  \_ /usr/libexec/at-spi2-registryd --use-gnome-session
+   1788 ?        Ss     0:00  \_ sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+   1791 ?        Sl     2:33  |   \_ /usr/bin/ibus-daemon --panel disable
+   1864 ?        Sl     0:00  |       \_ /usr/libexec/ibus-dconf
+   1866 ?        Sl     0:34  |       \_ /usr/libexec/ibus-extension-gtk3
+   1975 ?        Sl     0:40  |       \_ /usr/libexec/ibus-engine-simple
+   1789 ?        Ssl    0:00  \_ /usr/libexec/gsd-a11y-settings
+   1792 ?        Ssl    0:01  \_ /usr/libexec/gsd-color
+   1794 ?        Ssl    0:00  \_ /usr/libexec/gsd-datetime
+   1797 ?        Ssl    0:03  \_ /usr/libexec/gsd-housekeeping
+   1798 ?        Ssl    0:00  \_ /usr/libexec/gsd-keyboard
+   1799 ?        Ssl    0:01  \_ /usr/libexec/gsd-media-keys
+   1800 ?        Ssl    0:02  \_ /usr/libexec/gsd-power
+   1803 ?        Ssl    0:00  \_ /usr/libexec/gsd-print-notifications
+   1806 ?        Ssl    0:00  \_ /usr/libexec/gsd-rfkill
+   1813 ?        Ssl    0:02  \_ /usr/libexec/gsd-screensaver-proxy
+   1815 ?        Ssl    0:13  \_ /usr/libexec/gsd-sharing
+   1817 ?        Ssl    0:00  \_ /usr/libexec/gsd-smartcard
+   1820 ?        Ssl    0:00  \_ /usr/libexec/gsd-sound
+   1830 ?        Ssl    0:00  \_ /usr/libexec/gsd-wacom
+   1873 ?        Sl     0:01  \_ /usr/libexec/ibus-portal
+   1938 ?        Sl     0:24  \_ /snap/snap-store/1113/usr/bin/snap-store --gapplication-service
+   1982 ?        Sl     0:00  \_ /usr/libexec/gsd-printer
+   2056 ?        Ssl    0:48  \_ /usr/libexec/xdg-desktop-portal
+   2059 ?        SNsl   0:05  \_ /usr/libexec/tracker-miner-fs-3
+   2066 ?        Ssl    0:09  \_ /usr/libexec/xdg-desktop-portal-gnome
+   2100 ?        Sl     0:00  \_ /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+   2145 ?        Ssl    0:02  \_ /usr/libexec/xdg-desktop-portal-gtk
+   2193 ?        Ssl    0:00  \_ /usr/libexec/gvfsd-metadata
+   2583 ?        Sl     0:03  \_ /usr/bin/snap userd
+   8860 ?        Ssl    0:00  \_ /usr/bin/speech-dispatcher -s -t 0
+   8875 ?        Z      0:00  |   \_ [sd_espeak-ng-mb] <defunct>
+   8884 ?        Sl     0:00  |   \_ /usr/lib/speech-dispatcher-modules/sd_espeak-ng /etc/speech-dispatcher/modules/espeak-ng.conf
+   8904 ?        Sl     0:10  |   \_ /usr/lib/speech-dispatcher-modules/sd_dummy /etc/speech-dispatcher/modules/dummy.conf
+  22897 ?        Ssl    0:01  \_ /usr/libexec/gsd-xsettings
+  22929 ?        Sl     0:04  \_ /usr/libexec/ibus-x11
+  26350 ?        Sl     0:00  \_ /usr/share/code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/julia/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=eb3b91fb-1479-4719-86fa-dd59cc204c22&iid=eb3b91fb-1479-4719-86fa-dd59cc204c22&sid=eb3b91fb-1479-4719-86fa-dd59cc204c22 --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.89.1 --annotation=lsb-release=Ubuntu 22.04.4 LTS --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=28.2.8 --initial-client-fd=42 --shared-client-connection
+  87301 ?        Ssl    0:48  \_ /usr/libexec/gnome-terminal-server
+ 156434 pts/1    Ss     0:00  |   \_ bash
+ 171036 pts/1    T      0:00  |   |   \_ sudo ./script.sh
+ 171037 pts/3    Ss     0:00  |   |   |   \_ sudo ./script.sh
+ 171038 pts/3    T+     0:00  |   |   |       \_ /bin/sh ./script.sh
+ 171041 pts/3    T+     0:00  |   |   |           \_ less /sys/kernel/debug/tracing/trace
+ 171297 pts/1    T      0:00  |   |   \_ sudo ./script.sh
+ 171298 pts/4    Ss     0:00  |   |   |   \_ sudo ./script.sh
+ 171299 pts/4    T+     0:00  |   |   |       \_ /bin/sh ./script.sh
+ 171302 pts/4    T+     0:00  |   |   |           \_ less /sys/kernel/debug/tracing/trace
+ 282349 pts/1    S+     0:00  |   |   \_ strace -f -e trace=%process -othread.log ./task
+ 282352 pts/1    Sl+    0:00  |   |       \_ ./task
+ 282367 pts/1    S+     0:00  |   |           \_ sh -c -- ps axhf > thread2.txt
+ 282368 pts/1    R+     0:00  |   |               \_ ps axhf
+ 175504 pts/7    Ss+    0:00  |   \_ bash
+ 109523 ?        Sl     0:01  \_ /usr/bin/gnome-calendar --gapplication-service
+ 109603 ?        SLl    0:00  \_ /usr/bin/seahorse --gapplication-service
+ 124069 ?        S      0:00  \_ /bin/sh -c while true; do /usr/bin/xdg-screensaver reset >/dev/null 2>&1; sleep 30; done
+ 282340 ?        S      0:00  |   \_ sleep 30
+ 171942 ?        Sl     0:41  \_ /usr/bin/nautilus --gapplication-service
+ 184299 ?        Sl     0:07  \_ /home/julia/.vscode/extensions/ms-vscode.cpptools-1.20.5-linux-x64/bin/cpptools-srv 26530 {DF0ABFAF-CCE9-4328-9F46-326A09CAE9A4}
+ 190113 ?        Sl     0:06  \_ /home/julia/.vscode/extensions/ms-vscode.cpptools-1.20.5-linux-x64/bin/cpptools-srv 26530 {ACA67602-303D-4AA1-B777-AC976CAF53F0}
+ 220188 ?        Sl     3:22  \_ /home/julia/Загрузки/tsetup.4.14.15/Telegram/Telegram
+   1461 ?        Sl     0:01 /usr/bin/gnome-keyring-daemon --daemonize --login
+   2209 ?        Ssl    0:12 /usr/libexec/fwupd/fwupd
+   2322 ?        Ss     0:00 /usr/sbin/kerneloops --test
+   2327 ?        Ss     0:00 /usr/sbin/kerneloops
+  60527 ?        Ssl    0:00 /usr/bin/lttng-sessiond
+  60528 ?        S      0:00  \_ /usr/bin/lttng-sessiond
+ 124643 ?        Ss     0:00 /usr/sbin/cron -f -P
+ 124712 ?        Ss     2:15 /lib/systemd/systemd-oomd
+ 265193 ?        Ss     0:00 /usr/sbin/cupsd -l
+ 265195 ?        Ssl    0:00 /usr/sbin/cups-browsed

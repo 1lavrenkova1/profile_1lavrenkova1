@@ -1,0 +1,49 @@
+julia@julia-ZenBook:~/OS/lb7$ strace -e trace=write -owrite_file.log ./test
+
+
+julia@julia-ZenBook:~/OS/lb7$ gcc son.c -o son
+julia@julia-ZenBook:~/OS/lb7$ gcc father.c -o father
+julia@julia-ZenBook:~/OS/lb7$ strace -f -e trace=%process -ofork.log ./father
+
+
+FATHER PARAM: pid=165059  ppid=165056
+
+
+SON PARAMS:  pid=165060  ppid=165059
+
+
+
+Child proccess is finished with status 0
+
+
+julia@julia-ZenBook:~/OS/lb7/task13$ strace -f -e trace=%process -ofork_3.log ./father res.txt
+FATHER PARAMS: sid = 156434  pid=173728  ppid=173725 
+SON_3 PARAMS:  pid=173731  ppid=173728
+SON_2 PARAMS:  pid=173730  ppid=173728
+son3 terminated–ZOMBIE
+Father finished before son termination without waiting for it 
+SON_3 PARAMS:  pid=173731  ppid=173728
+SON_1 PARAMS:  pid=173729  ppid=173728
+Father creates and waits
+SON_2 PARAMS ARE CHANGED:  pid=173730  ppid=1442
+
+julia@julia-ZenBook:~/OS/lb7$ gcc task4.c -o task
+julia@julia-ZenBook:~/OS/lb7$ gcc task4.c -o task
+julia@julia-ZenBook:~/OS/lb7$ strace -f -e trace=%process -osignal.log ./task
+SIGUSR1 catched, sending SIGUSR2
+Sleep SIGUSR1
+SIGUSR2 catched
+Send SIGUSR1
+Catch SIGINT
+
+
+julia@julia-ZenBook:~/OS/lb7$ gcc task18.c -o task
+julia@julia-ZenBook:~/OS/lb7$ strace -f -e trace=%process -othread.log ./task
+Thread_1 is started
+Thread_2 is started
+thread2 n = 2, time = 0
+thread1 n = 2, time = 0
+thread2 n = 4, time = 2
+thread1 n = 4, time = 6
+
+

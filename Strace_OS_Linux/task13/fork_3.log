@@ -1,0 +1,70 @@
+173728 execve("./father", ["./father", "res.txt"], 0x7ffe53b71168 /* 45 vars */) = 0
+173728 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7be3d4073a10) = 173729
+173728 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+173729 execve("son1", ["son1"], 0x7ffefc5317b0 /* 45 vars */ <unfinished ...>
+173728 <... clone resumed>, child_tidptr=0x7be3d4073a10) = 173730
+173728 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+173730 execve("son2", ["son2", "res.txt"], 0x7ffefc5317b0 /* 45 vars */ <unfinished ...>
+173728 <... clone resumed>, child_tidptr=0x7be3d4073a10) = 173731
+173731 execve("son3", ["son3"], 0x7ffefc5317b0 /* 45 vars */ <unfinished ...>
+173729 <... execve resumed>)            = 0
+173728 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x7be3d407c000, stack_size=0x9000}, 88 <unfinished ...>
+173730 <... execve resumed>)            = 0
+173731 <... execve resumed>)            = 0
+173732 execve("/bin/sh", ["sh", "-c", "--", "ps xjf | grep \"STAT\\|156434\" > r"...], 0x7ffefc5317b0 /* 45 vars */ <unfinished ...>
+173728 <... clone3 resumed>)            = 173732
+173728 wait4(173732,  <unfinished ...>
+173732 <... execve resumed>)            = 0
+173731 exit_group(39)                   = ?
+173731 +++ exited with 39 +++
+173732 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f38f27c5a10) = 173733
+173733 execve("/usr/bin/ps", ["ps", "xjf"], 0x64f401db6d38 /* 45 vars */ <unfinished ...>
+173732 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f38f27c5a10) = 173734
+173732 wait4(-1,  <unfinished ...>
+173733 <... execve resumed>)            = 0
+173734 execve("/usr/bin/grep", ["grep", "STAT\\|156434"], 0x64f401db6d80 /* 45 vars */) = 0
+173733 exit_group(0)                    = ?
+173734 exit_group(0)                    = ?
+173734 +++ exited with 0 +++
+173732 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 173734
+173732 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=173734, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+173732 wait4(-1,  <unfinished ...>
+173733 +++ exited with 0 +++
+173732 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 173733
+173732 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=173733, si_uid=1000, si_status=0, si_utime=0, si_stime=8} ---
+173732 wait4(-1, 0x7fff6b16dacc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+173732 exit_group(0)                    = ?
+173732 +++ exited with 0 +++
+173728 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 173732
+173728 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=173731, si_uid=1000, si_status=39, si_utime=0, si_stime=0} ---
+173728 wait4(173729, 0x7ffefc53162c, WNOHANG, NULL) = 0
+173728 exit_group(0)                    = ?
+173728 +++ exited with 0 +++
+173729 exit_group(0)                    = ?
+173729 +++ exited with 0 +++
+173730 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x7760d9293000, stack_size=0x9000}, 88 <unfinished ...>
+173764 execve("/bin/sh", ["sh", "-c", "--", "ps xjf | grep son2 >> res.txt"], 0x7ffee1512050 /* 45 vars */ <unfinished ...>
+173730 <... clone3 resumed>)            = 173764
+173764 <... execve resumed>)            = 0
+173730 wait4(173764,  <unfinished ...>
+173764 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x74db8e4fba10) = 173765
+173764 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+173765 execve("/usr/bin/ps", ["ps", "xjf"], 0x5bea322ccd38 /* 45 vars */ <unfinished ...>
+173764 <... clone resumed>, child_tidptr=0x74db8e4fba10) = 173766
+173764 wait4(-1,  <unfinished ...>
+173765 <... execve resumed>)            = 0
+173766 execve("/usr/bin/grep", ["grep", "son2"], 0x5bea322ccda8 /* 45 vars */) = 0
+173765 exit_group(0)                    = ?
+173766 exit_group(0)                    = ?
+173766 +++ exited with 0 +++
+173765 +++ exited with 0 +++
+173764 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 173766
+173764 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=173766, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+173764 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 173765
+173764 wait4(-1, 0x7ffda208223c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+173764 exit_group(0)                    = ?
+173764 +++ exited with 0 +++
+173730 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 173764
+173730 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=173764, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+173730 exit_group(0)                    = ?
+173730 +++ exited with 0 +++

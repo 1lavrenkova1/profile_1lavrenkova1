@@ -1,0 +1,2 @@
+write(3, "Hello\n\0Hello\n\0Hello\n\0Hello\n\0Hell"..., 700) = 700
++++ exited with 0 +++

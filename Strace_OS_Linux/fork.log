@@ -1,0 +1,30 @@
+165059 execve("./father", ["./father"], 0x7fffa53b3910 /* 45 vars */) = 0
+165059 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7c7cd5171a10) = 165060
+165060 execve("son", ["son"], 0x7ffdb0bc24c8 /* 45 vars */ <unfinished ...>
+165059 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x7c7cd517a000, stack_size=0x9000}, 88 <unfinished ...>
+165060 <... execve resumed>)            = 0
+165061 execve("/bin/sh", ["sh", "-c", "--", "ps -xf > test5.txt"], 0x7ffdb0bc24c8 /* 45 vars */ <unfinished ...>
+165059 <... clone3 resumed>)            = 165061
+165059 wait4(165061,  <unfinished ...>
+165061 <... execve resumed>)            = 0
+165061 vfork( <unfinished ...>
+165062 execve("/usr/bin/ps", ["ps", "-xf"], 0x5d032bfedd28 /* 45 vars */ <unfinished ...>
+165061 <... vfork resumed>)             = 165062
+165061 wait4(-1,  <unfinished ...>
+165062 <... execve resumed>)            = 0
+165062 exit_group(0)                    = ?
+165062 +++ exited with 0 +++
+165061 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 165062
+165061 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=165062, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+165061 wait4(-1, 0x7fff1a57fb5c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+165061 exit_group(0)                    = ?
+165061 +++ exited with 0 +++
+165059 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 165061
+165059 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=165061, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+165059 wait4(-1,  <unfinished ...>
+165060 exit_group(0)                    = ?
+165060 +++ exited with 0 +++
+165059 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 165060
+165059 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=165060, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+165059 exit_group(0)                    = ?
+165059 +++ exited with 0 +++

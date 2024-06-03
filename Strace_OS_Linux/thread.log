@@ -1,0 +1,161 @@
+282352 execve("./task", ["./task"], 0x7ffd6b6d9ef0 /* 45 vars */) = 0
+282352 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x78f78c7b7000, stack_size=0x9000}, 88 <unfinished ...>
+282353 execve("/bin/sh", ["sh", "-c", "--", "ps axhf > file.txt"], 0x7ffeda7a1498 /* 45 vars */ <unfinished ...>
+282352 <... clone3 resumed>)            = 282353
+282352 wait4(282353,  <unfinished ...>
+282353 <... execve resumed>)            = 0
+282353 vfork( <unfinished ...>
+282354 execve("/usr/bin/ps", ["ps", "axhf"], 0x620c54991d28 /* 45 vars */ <unfinished ...>
+282353 <... vfork resumed>)             = 282354
+282354 <... execve resumed>)            = 0
+282353 wait4(-1,  <unfinished ...>
+282354 exit_group(0)                    = ?
+282354 +++ exited with 0 +++
+282353 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282354
+282353 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282354, si_uid=1000, si_status=0, si_utime=0, si_stime=10} ---
+282353 wait4(-1, 0x7ffd528a445c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+282353 exit_group(0)                    = ?
+282353 +++ exited with 0 +++
+282352 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282353
+282352 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282353, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+282352 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x78f78c3ff990, parent_tid=0x78f78c3ff990, exit_signal=0, stack=0x78f78bbff000, stack_size=0x7fff80, tls=0x78f78c3ff6c0} => {parent_tid=[282355]}, 88) = 282355
+282352 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x78f78bbfe990, parent_tid=0x78f78bbfe990, exit_signal=0, stack=0x78f78b3fe000, stack_size=0x7fff80, tls=0x78f78bbfe6c0} => {parent_tid=[282356]}, 88) = 282356
+282352 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x78f78c7b7000, stack_size=0x9000}, 88 <unfinished ...>
+282357 execve("/bin/sh", ["sh", "-c", "--", "ps axhf >> file.txt"], 0x7ffeda7a1498 /* 45 vars */ <unfinished ...>
+282355 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x78f78c7a5000, stack_size=0x9000}, 88 <unfinished ...>
+282356 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x78f78c79c000, stack_size=0x9000}, 88 <unfinished ...>
+282352 <... clone3 resumed>)            = 282357
+282357 <... execve resumed>)            = 0
+282352 wait4(282357,  <unfinished ...>
+282359 execve("/bin/sh", ["sh", "-c", "--", "ps axhf > thread2.txt"], 0x7ffeda7a1498 /* 45 vars */ <unfinished ...>
+282358 execve("/bin/sh", ["sh", "-c", "--", "ps axhf > thread1.txt"], 0x7ffeda7a1498 /* 45 vars */ <unfinished ...>
+282356 <... clone3 resumed>)            = 282359
+282355 <... clone3 resumed>)            = 282358
+282356 wait4(282359,  <unfinished ...>
+282359 <... execve resumed>)            = 0
+282358 <... execve resumed>)            = 0
+282355 wait4(282358,  <unfinished ...>
+282357 vfork( <unfinished ...>
+282358 vfork( <unfinished ...>
+282359 vfork( <unfinished ...>
+282360 execve("/usr/bin/ps", ["ps", "axhf"], 0x588bafd04d28 /* 45 vars */ <unfinished ...>
+282361 execve("/usr/bin/ps", ["ps", "axhf"], 0x582a7f221d28 /* 45 vars */ <unfinished ...>
+282362 execve("/usr/bin/ps", ["ps", "axhf"], 0x5cbd0d99cd28 /* 45 vars */ <unfinished ...>
+282357 <... vfork resumed>)             = 282360
+282358 <... vfork resumed>)             = 282361
+282360 <... execve resumed>)            = 0
+282359 <... vfork resumed>)             = 282362
+282357 wait4(-1,  <unfinished ...>
+282358 wait4(-1,  <unfinished ...>
+282361 <... execve resumed>)            = 0
+282362 <... execve resumed>)            = 0
+282359 wait4(-1,  <unfinished ...>
+282362 exit_group(0)                    = ?
+282362 +++ exited with 0 +++
+282359 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282362
+282359 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282362, si_uid=1000, si_status=0, si_utime=0, si_stime=12} ---
+282359 wait4(-1, 0x7ffc6e0823ac, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+282359 exit_group(0)                    = ?
+282359 +++ exited with 0 +++
+282356 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282359
+282356 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282359, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+282361 exit_group(0)                    = ?
+282361 +++ exited with 0 +++
+282358 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282361
+282358 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282361, si_uid=1000, si_status=0, si_utime=1, si_stime=13} ---
+282358 wait4(-1, 0x7ffc0aee2e2c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+282358 exit_group(0)                    = ?
+282358 +++ exited with 0 +++
+282356 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282358, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+282355 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282358
+282360 exit_group(0)                    = ?
+282360 +++ exited with 0 +++
+282357 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282360
+282357 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282360, si_uid=1000, si_status=0, si_utime=1, si_stime=16} ---
+282357 wait4(-1, 0x7ffd2f6ff74c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+282357 exit_group(0)                    = ?
+282357 +++ exited with 0 +++
+282352 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282357
+282356 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282357, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+282356 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x78f78c7b7000, stack_size=0x9000}, 88 <unfinished ...>
+282363 execve("/bin/sh", ["sh", "-c", "--", "ps axhf > thread2.txt"], 0x7ffeda7a1498 /* 45 vars */ <unfinished ...>
+282356 <... clone3 resumed>)            = 282363
+282363 <... execve resumed>)            = 0
+282356 wait4(282363,  <unfinished ...>
+282363 vfork( <unfinished ...>
+282364 execve("/usr/bin/ps", ["ps", "axhf"], 0x617fc9e86d28 /* 45 vars */ <unfinished ...>
+282363 <... vfork resumed>)             = 282364
+282363 wait4(-1,  <unfinished ...>
+282364 <... execve resumed>)            = 0
+282364 exit_group(0)                    = ?
+282364 +++ exited with 0 +++
+282363 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282364
+282363 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282364, si_uid=1000, si_status=0, si_utime=0, si_stime=10} ---
+282363 wait4(-1, 0x7ffca6bd92dc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+282363 exit_group(0)                    = ?
+282363 +++ exited with 0 +++
+282352 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282363, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+282356 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282363
+282356 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x78f78c7b7000, stack_size=0x9000}, 88 <unfinished ...>
+282367 execve("/bin/sh", ["sh", "-c", "--", "ps axhf > thread2.txt"], 0x7ffeda7a1498 /* 45 vars */ <unfinished ...>
+282356 <... clone3 resumed>)            = 282367
+282367 <... execve resumed>)            = 0
+282356 wait4(282367,  <unfinished ...>
+282367 vfork( <unfinished ...>
+282368 execve("/usr/bin/ps", ["ps", "axhf"], 0x56591a834d28 /* 45 vars */ <unfinished ...>
+282367 <... vfork resumed>)             = 282368
+282367 wait4(-1,  <unfinished ...>
+282368 <... execve resumed>)            = 0
+282368 exit_group(0)                    = ?
+282368 +++ exited with 0 +++
+282367 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282368
+282367 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282368, si_uid=1000, si_status=0, si_utime=0, si_stime=11} ---
+282367 wait4(-1, 0x7ffc9162329c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+282367 exit_group(0)                    = ?
+282367 +++ exited with 0 +++
+282352 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282367, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+282356 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282367
+282356 exit(0)                          = ?
+282356 +++ exited with 0 +++
+282355 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x78f78c7b7000, stack_size=0x9000}, 88 <unfinished ...>
+282369 execve("/bin/sh", ["sh", "-c", "--", "ps axhf > thread1.txt"], 0x7ffeda7a1498 /* 45 vars */ <unfinished ...>
+282355 <... clone3 resumed>)            = 282369
+282369 <... execve resumed>)            = 0
+282355 wait4(282369,  <unfinished ...>
+282369 vfork( <unfinished ...>
+282370 execve("/usr/bin/ps", ["ps", "axhf"], 0x5f7646b40d28 /* 45 vars */ <unfinished ...>
+282369 <... vfork resumed>)             = 282370
+282369 wait4(-1,  <unfinished ...>
+282370 <... execve resumed>)            = 0
+282370 exit_group(0)                    = ?
+282370 +++ exited with 0 +++
+282369 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282370
+282369 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282370, si_uid=1000, si_status=0, si_utime=0, si_stime=14} ---
+282369 wait4(-1, 0x7fff78b0193c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+282369 exit_group(0)                    = ?
+282369 +++ exited with 0 +++
+282355 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282369
+282352 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282369, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+282355 exit(0)                          = ?
+282355 +++ exited with 0 +++
+282352 clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x78f78c7b7000, stack_size=0x9000}, 88 <unfinished ...>
+282371 execve("/bin/sh", ["sh", "-c", "--", "ps axhf >> file.txt"], 0x7ffeda7a1498 /* 45 vars */ <unfinished ...>
+282352 <... clone3 resumed>)            = 282371
+282371 <... execve resumed>)            = 0
+282352 wait4(282371,  <unfinished ...>
+282371 vfork( <unfinished ...>
+282372 execve("/usr/bin/ps", ["ps", "axhf"], 0x5d02bde5cd28 /* 45 vars */ <unfinished ...>
+282371 <... vfork resumed>)             = 282372
+282371 wait4(-1,  <unfinished ...>
+282372 <... execve resumed>)            = 0
+282372 exit_group(0)                    = ?
+282372 +++ exited with 0 +++
+282371 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282372
+282371 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282372, si_uid=1000, si_status=0, si_utime=0, si_stime=11} ---
+282371 wait4(-1, 0x7ffe4770685c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+282371 exit_group(0)                    = ?
+282371 +++ exited with 0 +++
+282352 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 282371
+282352 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=282371, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+282352 exit_group(0)                    = ?
+282352 +++ exited with 0 +++

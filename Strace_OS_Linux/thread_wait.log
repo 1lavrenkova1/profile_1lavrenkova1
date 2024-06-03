@@ -1,0 +1,219 @@
+167382 wait4(167383,  <unfinished ...>
+167383 wait4(-1,  <unfinished ...>
+167384 +++ exited with 0 +++
+167383 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167384
+167383 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167384, si_uid=1000, si_status=0, si_utime=0, si_stime=2} ---
+167383 wait4(-1, 0x7ffd0f3cbeec, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167383 +++ exited with 0 +++
+167382 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167383
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167383, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167382 wait4(167387,  <unfinished ...>
+167385 wait4(167388,  <unfinished ...>
+167386 wait4(167389,  <unfinished ...>
+167388 wait4(-1,  <unfinished ...>
+167387 wait4(-1,  <unfinished ...>
+167389 wait4(-1,  <unfinished ...>
+167392 +++ exited with 0 +++
+167389 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167392
+167389 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167392, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167389 wait4(-1, 0x7ffdc10508ec, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167389 +++ exited with 0 +++
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167389
+167386 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167389, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167391 +++ exited with 0 +++
+167387 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167391
+167387 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167391, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167387 wait4(-1, 0x7ffc05a089ec, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167387 +++ exited with 0 +++
+167382 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167387
+167386 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167387, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167390 +++ exited with 0 +++
+167388 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167390
+167388 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167390, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167388 wait4(-1, 0x7ffefe63bf5c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167388 +++ exited with 0 +++
+167386 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167388, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167388
+167386 wait4(167393,  <unfinished ...>
+167393 wait4(-1,  <unfinished ...>
+167394 +++ exited with 0 +++
+167393 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167394
+167393 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167394, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167393 wait4(-1, 0x7ffd55ba0f0c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167393 +++ exited with 0 +++
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167393
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167393, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167386 wait4(167396,  <unfinished ...>
+167396 wait4(-1,  <unfinished ...>
+167397 +++ exited with 0 +++
+167396 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167397
+167396 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167397, si_uid=1000, si_status=0, si_utime=0, si_stime=2} ---
+167396 wait4(-1, 0x7fff28c14fec, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167396 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167396, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167396
+167386 wait4(167398,  <unfinished ...>
+167398 wait4(-1,  <unfinished ...>
+167399 +++ exited with 0 +++
+167398 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167399
+167398 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167399, si_uid=1000, si_status=0, si_utime=0, si_stime=2} ---
+167398 wait4(-1, 0x7fffc517da3c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167398 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167398, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167398
+167386 wait4(167400,  <unfinished ...>
+167400 wait4(-1,  <unfinished ...>
+167401 +++ exited with 0 +++
+167400 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167401
+167400 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167401, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167400 wait4(-1, 0x7ffe89e287fc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167400 +++ exited with 0 +++
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167400
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167400, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 wait4(167402,  <unfinished ...>
+167402 wait4(-1,  <unfinished ...>
+167403 +++ exited with 0 +++
+167402 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167403
+167402 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167403, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167402 wait4(-1, 0x7ffe3c6d807c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167402 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167402, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167402
+167386 wait4(167404,  <unfinished ...>
+167404 wait4(-1,  <unfinished ...>
+167405 +++ exited with 0 +++
+167404 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167405
+167404 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167405, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167404 wait4(-1, 0x7ffcf6bad8ac, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167404 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167404, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167404
+167386 wait4(167406,  <unfinished ...>
+167406 wait4(-1,  <unfinished ...>
+167407 +++ exited with 0 +++
+167406 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167407
+167406 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167407, si_uid=1000, si_status=0, si_utime=0, si_stime=2} ---
+167406 wait4(-1, 0x7ffff9fc014c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167406 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167406, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167406
+167386 wait4(167423,  <unfinished ...>
+167423 wait4(-1,  <unfinished ...>
+167424 +++ exited with 0 +++
+167423 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167424
+167423 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167424, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167423 wait4(-1, 0x7ffe5bb9bf2c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167423 +++ exited with 0 +++
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167423
+167386 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167423, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167386 wait4(167496,  <unfinished ...>
+167496 wait4(-1,  <unfinished ...>
+167497 +++ exited with 0 +++
+167496 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167497
+167496 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167497, si_uid=1000, si_status=0, si_utime=0, si_stime=2} ---
+167496 wait4(-1, 0x7ffcd7f29bfc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167496 +++ exited with 0 +++
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167496
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167496, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167386 wait4(167498,  <unfinished ...>
+167498 wait4(-1,  <unfinished ...>
+167499 +++ exited with 0 +++
+167498 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167499
+167498 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167499, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167498 wait4(-1, 0x7ffdf840ffdc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167498 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167498, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167498
+167385 wait4(167503,  <unfinished ...>
+167503 wait4(-1,  <unfinished ...>
+167504 +++ exited with 0 +++
+167503 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167504
+167503 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167504, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167503 wait4(-1, 0x7ffdbd752f5c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167503 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167503, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167503
+167386 wait4(167505,  <unfinished ...>
+167505 wait4(-1,  <unfinished ...>
+167506 +++ exited with 0 +++
+167505 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167506
+167505 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167506, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167505 wait4(-1, 0x7ffdb183146c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167505 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167505, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167386 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167505
+167386 +++ exited with 0 +++
+167385 wait4(167529,  <unfinished ...>
+167529 wait4(-1,  <unfinished ...>
+167530 +++ exited with 0 +++
+167529 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167530
+167529 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167530, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167529 wait4(-1, 0x7ffd3d0d60ac, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167529 +++ exited with 0 +++
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167529
+167385 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167529, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 wait4(167539,  <unfinished ...>
+167539 wait4(-1,  <unfinished ...>
+167540 +++ exited with 0 +++
+167539 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167540
+167539 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167540, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167539 wait4(-1, 0x7ffe4ee41f6c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167539 +++ exited with 0 +++
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167539
+167385 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167539, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 wait4(167541,  <unfinished ...>
+167541 wait4(-1,  <unfinished ...>
+167542 +++ exited with 0 +++
+167541 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167542
+167541 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167542, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167541 wait4(-1, 0x7ffcb962a8cc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167541 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167541, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167541
+167385 wait4(167543,  <unfinished ...>
+167543 wait4(-1,  <unfinished ...>
+167544 +++ exited with 0 +++
+167543 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167544
+167543 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167544, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167543 wait4(-1, 0x7ffc5a2d017c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167543 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167543, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167543
+167385 wait4(167545,  <unfinished ...>
+167545 wait4(-1,  <unfinished ...>
+167546 +++ exited with 0 +++
+167545 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167546
+167545 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167546, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167545 wait4(-1, 0x7ffc5e7d0dec, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167545 +++ exited with 0 +++
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167545
+167385 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167545, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 wait4(167576,  <unfinished ...>
+167576 wait4(-1,  <unfinished ...>
+167577 +++ exited with 0 +++
+167576 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167577
+167576 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167577, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167576 wait4(-1, 0x7ffd5384ad5c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167576 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167576, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167576
+167385 wait4(167578,  <unfinished ...>
+167578 wait4(-1,  <unfinished ...>
+167579 +++ exited with 0 +++
+167578 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167579
+167578 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167579, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167578 wait4(-1, 0x7ffc29effe3c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167578 +++ exited with 0 +++
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167578, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167385 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167578
+167385 +++ exited with 0 +++
+167382 wait4(167580,  <unfinished ...>
+167580 wait4(-1,  <unfinished ...>
+167581 +++ exited with 0 +++
+167580 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167581
+167580 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167581, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+167580 wait4(-1, 0x7fffabe4f4fc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+167580 +++ exited with 0 +++
+167382 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 167580
+167382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=167580, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+167382 +++ exited with 0 +++

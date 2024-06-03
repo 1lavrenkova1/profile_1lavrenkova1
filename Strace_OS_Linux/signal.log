@@ -1,0 +1,9 @@
+169514 execve("./task", ["./task"], 0x7fff42e4ad60 /* 45 vars */) = 0
+169514 kill(169514, SIGUSR1)            = 0
+169514 --- SIGUSR1 {si_signo=SIGUSR1, si_code=SI_USER, si_pid=169514, si_uid=1000} ---
+169514 kill(169514, SIGUSR2)            = 0
+169514 --- SIGUSR2 {si_signo=SIGUSR2, si_code=SI_USER, si_pid=169514, si_uid=1000} ---
+169514 kill(169514, SIGINT)             = 0
+169514 --- SIGINT {si_signo=SIGINT, si_code=SI_USER, si_pid=169514, si_uid=1000} ---
+169514 exit_group(-1)                   = ?
+169514 +++ exited with 255 +++
